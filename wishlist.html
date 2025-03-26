@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Exclusive</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .trash-icon {
+            font-size: 20px;  /* Adjust size */
+            color: black; /* Change color if needed */
+            border: 2px solid rgb(226, 226, 226);
+            padding: 10px;
+            border-radius: 8px; /* Adjust for rounded corners */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(228, 225, 222);
+        }
+        footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+.footer a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer input {
+            width: 80%;
+            padding: 5px;
+            margin-top: 10px;
+            border: none;
+        }
+
+      .download-app {
+        text-align: center;        
+    }
+    .download{
+      display:flex;
+      flex-direction: row;
+      gap: 7px;
+
+    }
+    
+    .app-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .app-buttons img {
+        width: 120px;
+        height: auto;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .fab {
+        font-size: 24px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .fab:hover {
+        color: #1DA1F2;
+        cursor: pointer;
+    }
+    .account{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+    }
+    .highlight {
+    width: 20px;
+    height: 25px;
+    background-color: #d9534f; 
+    border-radius: 4px;
+}
+.card-body{
+    background-color: black;
+    color:white;
+    justify-content: center;
+    text-align: center;
+}
+.card-body a{
+    text-decoration: none;
+    color:white;
+}
+
+    </style>
+</head>
+<body>
+ 
+    <div class="bg-dark text-white py-2">
+        <div class="container text-center">
+            <p class="mb-0">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="text-white text-decoration-none">Shopnow</a></p>
+        </div>
+    </div>
+
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#"><h3>Exclusive</h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <form class="position-relative me-4">
+                            <input type="search" class="form-control" placeholder="What are you looking for?">
+                            <button class="btn position-absolute end-0 top-50 translate-middle-y" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <a href="wishlist.html" class="text-dark me-3"><i class="far fa-heart"></i></a>
+                        <a href="cart.html" class="text-dark me-3"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="account.html" class="text-dark"><i class="far fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <div class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-dark">Home</a></li>
+                <li class="breadcrumb-item active">Wishlist</li>
+            </ol>
+        </nav>
+    </div>
+
+  
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5>Wishlist (4)</h5>
+                <button class="btn btn-outline-dark">Move All To Bag</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-90">
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-50%</span>
+                            <button class="btn position-absolute top-0 end-0 m-2" title="Add to cart">
+                                <i class="fa fa-trash trash-icon"></i>
+                            </button>
+                            <img src="bag.webp" class="card-img-top" alt="Gucci Duffle bag">
+                        </div>
+                        <div class="card-body">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                        </div>
+                    </div>
+                            <h6 class="card-title">Gucci Duffle bag</h6>
+                            <p class="card-text">
+                                <span class="text-danger me-2">$960</span>
+                                <span class="text-decoration-line-through text-muted">$1160</span>
+                            </p>
+                    
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-90">
+                        <div class="position-relative">
+                            <button class="btn position-absolute top-0 end-0 m-2" title="Add to cart">
+                                <i class="fa fa-trash trash-icon"></i>
+                            </button>
+                            <img src="cooler.webp" class="card-img-top" alt="RGB liquid CPU Cooler">
+                        </div>
+                        <div class="card-body">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                        </div>
+                    </div>
+                            <h6 class="card-title">RGB liquid CPU Cooler</h6>
+                            <p class="card-text">
+                                <span class="text-danger">$1960</span>
+                            </p>                  
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-90">
+                        <div class="position-relative">
+                            <button class="btn position-absolute top-0 end-0 m-2" title="Add to cart">
+                                <i class="fa fa-trash trash-icon"></i>
+                            </button>
+                            <img src="gamepad.webp" class="card-img-top" alt="GP11 Gamepad">
+                        </div>
+                        <div class="card-body">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                        </div>
+                    </div>
+                            <h6 class="card-title">GP11 Shooter USB Gamepad</h6>
+                            <p class="card-text">
+                                <span class="text-danger">$550</span>
+                            </p>   
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-90">
+                        <div class="position-relative">
+                            <button class="btn position-absolute top-0 end-0 m-2" title="Add to cart">
+                                <i class="fa fa-trash trash-icon"></i>
+                            </button>
+                            <img src="jacket.webp" class="card-img-top" alt="Quilted Satin Jacket">
+                        </div>
+                        <div class="card-body">    
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                        </div>
+                    </div>
+                            <h6 class="card-title">Quilted Satin Jacket</h6>
+                            <p class="card-text">
+                                <span class="text-danger">$750</span>
+                            </p>
+                    
+                </div>
+            </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="d-flex align-items-center">
+                            <span class="highlight"></span>
+                            <h5 class="mb-0 ms-2">Just For You</h5>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary">See All</button>
+                    </div>
+                    
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card h-90">
+                            <div class="position-relative">
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-2">-40%</span>
+                                <img src="laptop.webp" class="card-img-top" alt="ASUS Laptop">
+                            </div>
+                            <div class="card-body">
+                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                            </div>
+                        </div>
+                                <h6 class="card-title">ASUS FHD Gaming Laptop</h6>                    
+                                <p class="card-text">
+                                    <span class="text-danger me-2">$960</span>
+                                    <span class="text-decoration-line-through text-muted">$1160</span>
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="rating me-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <span class="text-muted">(88)</span>
+                                </div>                           
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card h-90">
+                            <div class="position-relative">
+                                <img src="monitor.webp" class="card-img-top" alt="Gaming Monitor">
+                            </div>
+                            <div class="card-body">
+                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                            </div>
+                        </div>
+                                <h6 class="card-title">IPS LCD Gaming Monitor</h6>
+                                <p class="card-text">
+                                    <span class="text-danger">$1160</span>
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="rating me-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <span class="text-muted">(99)</span>
+                                </div>                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-90">
+                            <div class="position-relative">
+                                <img src="keyboard.webp" class="card-img-top" alt="RGB Keyboard">
+                            </div>
+                            <div class="card-body">
+                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+                            </div>
+                        </div>
+                                <h6 class="card-title">RGB AK-900 Wired Keyboard</h6>
+                                <p class="card-text">
+                                    <span class="text-danger">$200</span>
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="rating me-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <span class="text-muted">(75)</span>
+                                </div>                      
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card h-90">
+                            <div class="position-relative">
+                                <span class="badge bg-success position-absolute top-0 start-0 m-2">New</span>
+                                <img src="gamepad1.webp" class="card-img-top" alt="Havit Gamepad">
+                            </div>
+                            <div class="card-body">
+                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>  Add to cart</a>
+
+                            </div>
+                        </div>
+                                <h6 class="card-title">Havit HV-G92 Gamepad</h6>
+                                <p class="card-text">
+                                    <span class="text-danger">$560</span>
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="rating me-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <span class="text-muted">(99)</span>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3">
+                  <h4>Exclusive</h4>
+                    <h6>Subscribe</h6>
+                    <p>Get 10% off on your first order</p>
+                    <div class="footer-email">
+                      <input type="email" class="email-input" placeholder="Enter your email">
+                      <button class="submit-btn"><i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Support</h5>
+                    <p>111 Bijoy Sarani, Dhaka, BD</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-8888-9999</p>
+                </div>
+                <div class="col-md-2">
+                  <div class="account">
+                  <h5>Account</h5>
+                  <a href="account.html">My account</a>
+                  <a href="login.html">Login/ Register</a>
+                  <a href="cart.html">Cart</a>
+                  <a href="wishlist.html">Wishlist</a>
+                  <a href="homepage.html">Shop</a>
+                </div>
+    
+              </div>
+                <div class="col-md-2">
+                  <div class="account">
+                    <h5>Quick Links</h5>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">FAQ</a>
+                    <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <h5>Download App</h5>
+                  <p>Save $3 with App</p>
+                  <div class="download">
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.example.com" alt="QR Code" height="100px;">
+        
+                  <div class="app-buttons">
+                    <img src="google-play.jpg" alt="Google Play" width="140">
+                    <img src="app-store.jpg" alt="App Store" width="100">
+                </div>
+              </div>
+                  <div class="social-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-linkedin"></i>
+                  </div>
+              </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <p>© 2022 Exclusive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
